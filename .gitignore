@@ -1,0 +1,54 @@
+# ============================================
+# STM32 / Keil MDK-ARM Project .gitignore
+# ============================================
+
+# --- Keil MDK-ARM Build Outputs ---
+*.crf
+*.d
+*.o
+*.obj
+*.axf
+*.elf
+*.hex
+*.bin
+*.htm
+*.build_log.htm
+*.lnp
+*.sct
+*.scr
+*.dep
+*.lst
+*.map
+*.iex
+*.plg
+*.fed
+
+# --- Keil User-Specific Files ---
+*.uvguix.*
+*.dbgconf
+JLinkLog.txt
+JLinkSettings.ini
+
+# --- STM32CubeMX generated (machine-specific) ---
+.mxproject
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- OS ---
+Thumbs.db
+Desktop.ini
+
+# --- Python (if used) ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Backup files ---
+*.bak
+*.orig

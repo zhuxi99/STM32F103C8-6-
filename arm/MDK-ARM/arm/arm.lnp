@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"arm\startup_stm32f103xb.o"
+"arm\main.o"
+"arm\gpio.o"
+"arm\stm32f1xx_it.o"
+"arm\stm32f1xx_hal_msp.o"
+"arm\servo.o"
+"arm\bluetooth.o"
+"arm\stm32f1xx_hal_gpio_ex.o"
+"arm\stm32f1xx_hal.o"
+"arm\stm32f1xx_hal_rcc.o"
+"arm\stm32f1xx_hal_rcc_ex.o"
+"arm\stm32f1xx_hal_gpio.o"
+"arm\stm32f1xx_hal_dma.o"
+"arm\stm32f1xx_hal_cortex.o"
+"arm\stm32f1xx_hal_pwr.o"
+"arm\stm32f1xx_hal_flash.o"
+"arm\stm32f1xx_hal_flash_ex.o"
+"arm\stm32f1xx_hal_exti.o"
+"arm\stm32f1xx_hal_tim.o"
+"arm\stm32f1xx_hal_tim_ex.o"
+"arm\stm32f1xx_hal_uart.o"
+"arm\system_stm32f1xx.o"
+--strict --scatter "arm\arm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "arm.map" -o arm\arm.axf
